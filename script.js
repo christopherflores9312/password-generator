@@ -47,27 +47,27 @@ function generatePassword() {
     includeSpecialChars = confirm("Do you want to include special characters?\nClick OK for Yes or Cancel for No");
   }
 
-    // Build a string containing all the characters to include in the password
-    var allChars = "";
-    if (includeLowercase) {
-      allChars += lowercaseChars;
-    }
-    if (includeUppercase) {
-      allChars += uppercaseChars;
-    }
-    if (includeNumbers) {
-      allChars += numericChars;
-    }
-    if (includeSpecialChars) {
-      allChars += specialChars;
-    }
+  // Build a string containing all the characters to include in the password
+  var allChars = "";
+  if (includeLowercase) {
+    allChars += lowercaseChars;
+  }
+  if (includeUppercase) {
+    allChars += uppercaseChars;
+  }
+  if (includeNumbers) {
+    allChars += numericChars;
+  }
+  if (includeSpecialChars) {
+    allChars += specialChars;
+  }
 
-    // Generate the password by randomly selecting characters from the allChars string
-    var password = "";
-    for (var i = 0; i < passwordLength; i++) {
-      password += allChars.charAt(Math.floor(Math.random() * allChars.length));
-    }
+  // Generate the password by randomly selecting characters from the allChars string
+  var password = "";
+  for (var i = 0; i < passwordLength; i++) {
+    password += allChars.charAt(Math.floor(Math.random() * allChars.length));
+  }
 
-    // Return the generated password
-    return password;
+  // Return the generated password
+  return password;
 }
