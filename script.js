@@ -46,4 +46,21 @@ function generatePassword() {
     includeNumbers = confirm("Do you want to include numeric characters?\nClick OK for Yes or Cancel for No");
     includeSpecialChars = confirm("Do you want to include special characters?\nClick OK for Yes or Cancel for No");
   }
+
+    // Build a string containing all the characters to include in the password
+    var allChars = "";
+    if (includeLowercase) {
+      allChars += lowercaseChars;
+    }
+    if (includeUppercase) {
+      allChars += uppercaseChars;
+    }
+    if (includeNumbers) {
+      allChars += numericChars;
+    }
+    if (includeSpecialChars) {
+      allChars += specialChars;
+    }
+
+    
 }
