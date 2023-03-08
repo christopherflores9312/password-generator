@@ -22,5 +22,8 @@ function generatePassword() {
   var numericChars = "0123456789";
   var specialChars = "!@#$%^&*()_+~`|}{[]\:;?><,./-=";
 
-  
+   // Prompt the user for the length of the password
+   var passwordLength = prompt("Enter the length of the password (8-128 characters):");
+   passwordLength = parseInt(passwordLength);
+
 }
