@@ -22,8 +22,14 @@ function generatePassword() {
   var numericChars = "0123456789";
   var specialChars = "!@#$%^&*()_+~`|}{[]\:;?><,./-=";
 
-   // Prompt the user for the length of the password
-   var passwordLength = prompt("Enter the length of the password (8-128 characters):");
-   passwordLength = parseInt(passwordLength);
+  // Prompt the user for the length of the password
+  var passwordLength = prompt("Enter the length of the password (8-128 characters):");
+  passwordLength = parseInt(passwordLength);
+
+    // Validate the length of the password. While PW is not a number or doesn't meet length requirements...
+  while (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
+    passwordLength = prompt("Invalid input! Please enter a number between 8 and 128 for password length:");
+    passwordLength = parseInt(passwordLength);
+  }
 
 }
