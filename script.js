@@ -32,4 +32,11 @@ function generatePassword() {
     passwordLength = parseInt(passwordLength);
   }
 
+    // Ask the user which character sets to include in the password
+    var includeLowercase = confirm("Do you want to include lowercase characters?\nClick OK for Yes or Cancel for No");
+    var includeUppercase = confirm("Do you want to include uppercase characters?\nClick OK for Yes or Cancel for No");
+    var includeNumbers = confirm("Do you want to include numeric characters?\nClick OK for Yes or Cancel for No");
+    var includeSpecialChars = confirm("Do you want to include special characters?\nClick OK for Yes or Cancel for No");
+  
+
 }
