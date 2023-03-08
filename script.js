@@ -13,3 +13,14 @@ function writePassword() {
 
 // Add a click event listener to the Generate Password button
 generateBtn.addEventListener("click", writePassword);
+
+// Function to generate a new password
+function generatePassword() {
+  // Define the character sets to use in the password
+  var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+  var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var numericChars = "0123456789";
+  var specialChars = "!@#$%^&*()_+~`|}{[]\:;?><,./-=";
+
+  
+}
